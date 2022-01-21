@@ -11,7 +11,7 @@ clear()
 pass
 
 while True:
-  command = input("Enter Method [-] [*] [+] : ").lower()
+  command = input(crayons.cyan("Enter Method [-] [*] [+] : ")).lower()
   args = command.split(' ')
   split = args[1:]
   content = " ".join(split)
@@ -29,7 +29,7 @@ while True:
 
     pass
 
-  if command.startswith('-'):
+  elif command.startswith('-'):
       print(crayons.cyan('\nFirst Number : '))
       number1 = int(input())
       print(crayons.green(f'Number [{number1}] Chosen.'))
@@ -41,7 +41,7 @@ while True:
       print(crayons.green(f'{number1} - {number2} = {number1 - number2} \n\n\n'))
       pass
 
-  if command.startswith('*'):
+  elif command.startswith('*'):
       print(crayons.cyan('\nFirst Number : '))
       number1 = int(input())
       print(crayons.green(f'Number [{number1}] Chosen.'))
@@ -53,8 +53,3 @@ while True:
       print(crayons.green(f'{number1} * {number2} = {number1 * number2} \n\n\n'))
       pass
 
-  if command == 'Admin3333333412412333335152152333333333311414243333334124333333333333134530333':
-    print('https://Fijo.tk/\nhttps://GitHub.com/xFijo/')
-
-  else:
-    print(crayons.red('Invalid Method.'))
